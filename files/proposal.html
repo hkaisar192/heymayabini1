@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Marry Me?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="heart-field" id="heartField"></div>
+
+<nav class="journey-dots" aria-label="Proposal journey progress">
+  <span></span><span></span><span class="active"></span>
+</nav>
+
+<div class="proposal-wrap" id="proposalWrap">
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+
+  <div class="proposal-content">
+
+    <div class="ring-stage">
+      <div class="ring-box">
+        <span class="sparkle">✦</span>
+        <span class="sparkle">✦</span>
+        <span class="sparkle">✦</span>
+        <!-- simple inline ring illustration, gold + gem -->
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <linearGradient id="ringGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#F4D578"/>
+              <stop offset="100%" stop-color="#D4AF37"/>
+            </linearGradient>
+            <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#FFF6F8"/>
+              <stop offset="50%" stop-color="#FFD6E0"/>
+              <stop offset="100%" stop-color="#E8B4B8"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="120" r="58" fill="none" stroke="url(#ringGold)" stroke-width="11"/>
+          <polygon points="100,38 122,66 100,90 78,66" fill="url(#gem)" stroke="#fff" stroke-width="2"/>
+          <polygon points="100,38 122,66 100,72 78,66" fill="#fff" opacity=".55"/>
+        </svg>
+      </div>
+    </div>
+
+    <span class="proposal-eyebrow">Chapter Three</span>
+    <p class="proposal-line">You are my best friend, my happiness, and my forever. ❤️</p>
+    <h1 class="proposal-question script">Will You<br>Marry Me?</h1>
+
+    <div class="answer-row" id="answerRow">
+      <button class="btn btn-yes btn-wobble" id="yesBtn">YES 💍</button>
+      <button class="btn btn-yes-alt btn-wobble" id="yesAltBtn">YES, OF COURSE 💖</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ACCEPTED OVERLAY ============ -->
+<div class="accepted-overlay" id="acceptedOverlay">
+  <div class="accepted-card">
+    <span class="accepted-ring">💍</span>
+    <h2 class="script">She Said Yes!</h2>
+    <p>"You just made me the happiest person in the world. ❤️"</p>
+    <p style="margin-top:18px; font-size:.85rem; opacity:.85;">Now let's go tell everyone.</p>
+  </div>
+</div>
+
+<div id="confettiHost"></div>
+
+<audio id="bgMusic" autoplay loop preload="metadata" playsinline src="music.mp3"></audio>
+<button class="music-toggle" id="musicToggle" aria-label="Play our song" title="Play our song">🎵</button>
+<script src="script.js"></script>
+</body>
+</html>

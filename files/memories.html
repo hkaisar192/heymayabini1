@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="heart-field" id="heartField"></div>
+
+<nav class="journey-dots" aria-label="Proposal journey progress">
+  <span></span><span class="active"></span><span></span>
+</nav>
+
+<!-- 
+  MUSIC: using the root song file so playback works on every page.
+-->
+<audio id="bgMusic" autoplay loop preload="metadata" playsinline src="music.mp3"></audio>
+<button class="music-toggle" id="musicToggle" aria-label="Play our song" title="Play our song">🎵</button>
+
+<div class="page-wrap">
+
+  <header class="page-header">
+    <span class="eyebrow">Chapter Two</span>
+    <h1 class="section-title script">Moments Worth Keeping</h1>
+    <p class="section-sub" style="text-align:center;">A small museum of us — the photos, the laughs,
+      and the words I never want to forget.</p>
+  </header>
+
+  <!-- ============ SLIDESHOW ============ -->
+  <section>
+    <div class="slideshow" id="slideshow">
+      <div class="slide active">
+        <div class="photo-tile">
+          <img src="reath.png" alt="Slide 1">
+          <span>Slide 1 — Our favorite vacation</span>
+        </div>
+        <p class="slide-caption">Our favorite vacation, summer ☀️</p>
+      </div>
+      <div class="slide">
+        <div class="photo-tile">
+          <img src="ChatGPT Image Jun 21, 2026, 03_12_02 PM.png" alt="Slide 2">
+          <span>Slide 2 — A random Tuesday</span>
+        </div>
+        <p class="slide-caption">A random Tuesday that felt magic</p>
+      </div>
+      <div class="slide">
+        <div class="photo-tile">
+          <img src="WhatsApp Image 2026-06-18 at 7.33.40 PM.jpeg" alt="Slide 3">
+          <span>Slide 3 — beautiful moments</span>
+        </div>
+        <p class="slide-caption">Capturing the beauty of everyday life</p>
+      </div>
+      <div class="slide-dots" id="slideDots">
+        <button class="active" data-i="0" aria-label="Slide 1"></button>
+        <button data-i="1" aria-label="Slide 2"></button>
+        <button data-i="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery-section">
+    <div class="polaroid-grid">
+      <figure class="polaroid">
+        <div class="polaroid-photo">
+          <img src="WhatsApp Image 2026-06-18 at 7.33.40 PM.jpeg" alt="Photo 1">
+        </div>
+        <figcaption>Photo 1 · Our first trip</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <div class="polaroid-photo">
+          <img src="ChatGPT Image Jun 21, 2026, 03_44_14 PM.png" alt="Photo 2">
+        </div>
+        <figcaption>Photo 2 · "Amra dujon jeno dhire dhire eke operer ovvash hoye jacchi.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <div class="polaroid-photo">
+          <img src="IMG-20260527-WA0014.jpg" alt="Photo 3">
+        </div>
+        <figcaption>Photo 3 · Lazy Sundays</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <div class="polaroid-photo">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-5.2-10-9.5C-0.3 7.6 2.1 4 5.8 4c2 0 3.6 1.1 4.2 2.7C10.6 5.1 12.2 4 14.2 4c3.7 0 6.1 3.6 3.8 7.5C19.5 15.8 12 21 12 21z"/></svg>
+        </div>
+        <figcaption>Photo 4 · Concert night</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <div class="polaroid-photo">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-5.2-10-9.5C-0.3 7.6 2.1 4 5.8 4c2 0 3.6 1.1 4.2 2.7C10.6 5.1 12.2 4 14.2 4c3.7 0 6.1 3.6 3.8 7.5C19.5 15.8 12 21 12 21z"/></svg>
+        </div>
+        <figcaption>Photo 5 · Holiday trip</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <div class="polaroid-photo">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-5.2-10-9.5C-0.3 7.6 2.1 4 5.8 4c2 0 3.6 1.1 4.2 2.7C10.6 5.1 12.2 4 14.2 4c3.7 0 6.1 3.6 3.8 7.5C19.5 15.8 12 21 12 21z"/></svg>
+        </div>
+        <figcaption>Photo 6 · Just us, being silly</figcaption>
+      </figure>
+    </div>
+    <p style="text-align:center; margin-top:22px; font-size:.78rem; color:var(--deep-mauve-soft); opacity:.8;">
+      Tap any frame after swapping in your own photos — click-to-enlarge is wired up and ready.
+    </p>
+  </section>
+
+  <!-- ============ MEMORY CARDS ============ -->
+  <section class="memories-section">
+    <div class="head" style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:14px;">
+      <span class="eyebrow">Hover or Tap to Reveal</span>
+      <h2 class="section-title script">Moments We'll Always Tell</h2>
+    </div>
+
+    <div class="memory-grid">
+      <div class="memory-card">
+        <div class="memory-card-inner">
+          <div class="memory-face memory-front">
+            <div class="icon">💕</div>
+            <h3 class="script">First Meeting</h3>
+            <p>Where it began</p>
+          </div>
+          <div class="memory-face memory-back">
+            <p>Describe the very first moment you saw each other — the place,
+              the feeling, the small detail you still remember.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <div class="memory-card-inner">
+          <div class="memory-face memory-front">
+            <div class="icon">🌹</div>
+            <h3 class="script">First Date</h3>
+            <p>Butterflies &amp; all</p>
+          </div>
+          <div class="memory-face memory-back">
+            <p>What did you do, where did you go, and what made you want
+              a second date?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <div class="memory-card-inner">
+          <div class="memory-face memory-front">
+            <div class="icon">😂</div>
+            <h3 class="script">Funniest Moment</h3>
+            <p>Still laughing</p>
+          </div>
+          <div class="memory-face memory-back">
+            <p>The story that gets brought up every time you want to laugh
+              until it hurts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <div class="memory-card-inner">
+          <div class="memory-face memory-front">
+            <div class="icon">✨</div>
+            <h3 class="script">Our Dream Future</h3>
+            <p>What's next</p>
+          </div>
+          <div class="memory-face memory-back">
+            <p>A glimpse of the life you're hoping to build together,
+              starting with what you're about to ask.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTES ============ -->
+  <section class="quotes-section">
+    <span class="eyebrow">In Your Own Words</span>
+    <div class="quote-track" id="quoteTrack">
+      <div class="quote-slide active">
+        <blockquote class="script">"You're my favorite hello and my hardest goodbye."</blockquote>
+        <cite>Something you once said to me</cite>
+      </div>
+      <div class="quote-slide">
+        <blockquote class="script">"Home isn't a place. It's wherever you are."</blockquote>
+        <cite>A note I never sent</cite>
+      </div>
+      <div class="quote-slide">
+        <blockquote class="script">"With you, even ordinary days feel like favorites."</blockquote>
+        <cite>How I feel, every day</cite>
+      </div>
+    </div>
+  </section>
+
+  <div class="next-row">
+    <a href="proposal.html" class="btn btn-primary">One Last Surprise →</a>
+  </div>
+
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
